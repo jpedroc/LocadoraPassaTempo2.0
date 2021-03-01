@@ -38,7 +38,7 @@ public class AtorResource {
 
     @GetMapping("/{id}")
     public ResponseEntity<Ator> listarAtoresSelect(@PathVariable Long id) {
-        Ator ator = atorService.findAtor(id);
+        Ator ator = atorService.findById(id);
         return new ResponseEntity<>(ator, HttpStatus.OK);
     }
 

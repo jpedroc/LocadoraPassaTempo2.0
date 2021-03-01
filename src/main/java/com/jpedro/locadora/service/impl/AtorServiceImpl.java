@@ -39,13 +39,13 @@ public class AtorServiceImpl implements AtorService {
     }
 
     @Override
-    public Ator findAtor(Long id) {
-        return findById(id);
+    public Ator findById(Long id) {
+        return findAtor(id);
     }
 
     @Override
     public void delete(Long id) {
-        Ator ator = findById(id);
+        Ator ator = findAtor(id);
         atorRepository.delete(ator);
     }
 
@@ -54,7 +54,7 @@ public class AtorServiceImpl implements AtorService {
         return atorRepository.findAllSelect();
     }
 
-    private Ator findById(Long id) {
+    private Ator findAtor(Long id) {
         return atorRepository.findById(id)
                 .orElseThrow(() -> new BadRequestException("Ator não encontrado"));
     }

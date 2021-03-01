@@ -46,13 +46,13 @@ public class ClasseServiceImpl implements ClasseService {
     }
 
     @Override
-    public Classe findClasse(Long id) {
-        return findById(id);
+    public Classe findById(Long id) {
+        return findClasse(id);
     }
 
     @Override
     public void delete(Long id) {
-        Classe classe = findById(id);
+        Classe classe = findClasse(id);
         classeRepository.delete(classe);
     }
 
@@ -61,7 +61,7 @@ public class ClasseServiceImpl implements ClasseService {
         return classeRepository.findAllSelect();
     }
 
-    private Classe findById(Long id) {
+    private Classe findClasse(Long id) {
         return classeRepository.findById(id)
                 .orElseThrow(() -> new BadRequestException("Classe não encontrado"));
     }

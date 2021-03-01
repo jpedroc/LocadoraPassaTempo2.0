@@ -14,7 +14,7 @@ public interface AtorService {
 
     Page<Ator> findAll(Pageable pageable, AtorFilter atorFilter);
 
-    Ator findAtor(Long id);
+    Ator findById(Long id);
 
     void delete(Long id);
 
