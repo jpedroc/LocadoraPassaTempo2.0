@@ -41,7 +41,7 @@ public class ClasseResource {
 
     @GetMapping("/{id}")
     public ResponseEntity<Classe> listarClassesSelect(@PathVariable Long id) {
-        Classe classe = classeService.findClasse(id);
+        Classe classe = classeService.findById(id);
         return new ResponseEntity<>(classe, HttpStatus.OK);
     }
 
