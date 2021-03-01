@@ -1,20 +1,20 @@
 package com.jpedro.locadora.service;
 
-import com.jpedro.locadora.domain.Ator;
+import com.jpedro.locadora.domain.Classe;
 import com.jpedro.locadora.service.dto.DropDownDTO;
-import com.jpedro.locadora.service.filter.AtorFilter;
+import com.jpedro.locadora.service.filter.ClasseFilter;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
 import java.util.List;
 
-public interface AtorService {
+public interface ClasseService {
 
-    Ator save(Ator ator);
+    Classe save(Classe classe);
 
-    Page<Ator> findAll(Pageable pageable, AtorFilter atorFilter);
+    Page<Classe> findAll(Pageable pageable, ClasseFilter classeFilter);
 
-    Ator findAtor(Long id);
+    Classe findClasse(Long id);
 
     void delete(Long id);
 

@@ -29,7 +29,7 @@ public class AtorServiceImpl implements AtorService {
             throw new BadRequestException("Ator precisa de um nome");
         }
 
-        return  atorRepository.save(ator);
+        return atorRepository.save(ator);
     }
 
     @Override
