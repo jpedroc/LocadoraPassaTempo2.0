@@ -13,7 +13,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 public class DropDownDTO implements Serializable {
 
-    private Integer value;
+    private Long value;
 
     private String label;
 

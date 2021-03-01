@@ -12,6 +12,6 @@ import java.util.List;
 @Repository
 public interface DiretorRepository extends JpaRepository<Diretor, Long>, JpaSpecificationExecutor<Diretor> {
 
-    @Query("SELECT new com.jpedro.locadora.service.dto.DropDownDTO(d.id, d.nome) FROM Diretor")
+    @Query("SELECT new com.jpedro.locadora.service.dto.DropDownDTO(d.id, d.nome) FROM Diretor d")
     List<DropDownDTO> findAllSelect();
 }
