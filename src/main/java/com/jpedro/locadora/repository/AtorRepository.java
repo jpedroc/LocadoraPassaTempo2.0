@@ -12,6 +12,6 @@ import java.util.List;
 @Repository
 public interface AtorRepository extends JpaRepository<Ator, Long>, JpaSpecificationExecutor<Ator> {
 
-    @Query("SELECT new com.jpedro.locadora.service.dto.DropDownDTO(a.id, a.nome) from Ator")
+    @Query("SELECT new com.jpedro.locadora.service.dto.DropDownDTO(a.id, a.nome) from Ator a")
     List<DropDownDTO> findAllSelect();
 }
