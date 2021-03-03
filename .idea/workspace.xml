@@ -5,16 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65b0519b-3e7a-4aaf-97ad-f865df4c86a2" name="Default Changelist" comment="resource titulo">
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/shared/models/pageable.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/shared/util/base-entity-list.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/shared/util/modal-service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/shared/util/base-entity-form.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/shared/util/page-notification-service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/shared/util/validation-util.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/services/util/base-entity-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/util/base-entity-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/services/util/page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/util/page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/services/util/request-util.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/util/request-util.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/shared.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/shared.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/util/base-entity-list.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/util/base-entity-list.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +57,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614807786046</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="base entity list feito">
+      <created>1614809197840</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1614809197840</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -77,6 +82,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="resource titulo" />
     <MESSAGE value="workspace" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace" />
+    <MESSAGE value="base entity list feito" />
+    <option name="LAST_COMMIT_MESSAGE" value="base entity list feito" />
   </component>
 </project>
