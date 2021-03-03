@@ -27,8 +27,8 @@ public class ClasseResource {
 
     private final ClasseService classeService;
 
-    @GetMapping
-    public ResponseEntity<Page<Classe>> listarClasses(@ModelAttribute ClasseFilter filter, Pageable pageable) {
+    @PostMapping
+    public ResponseEntity<Page<Classe>> listarClasses(@RequestBody ClasseFilter filter, Pageable pageable) {
         Page<Classe> classes = classeService.findAll(pageable, filter);
         return new ResponseEntity<>(classes, HttpStatus.OK);
     }
