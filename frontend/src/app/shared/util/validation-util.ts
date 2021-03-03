@@ -6,12 +6,12 @@ export class ValidationUtil {
     '_default': 'Campo inválido'
   };
 
-  public static getErrorKeys(control: AbstractControl): string[] {
-    const messages = [];
+  public static getErrorKeys(control: AbstractControl): string {
+    let messages;
     if ((control.dirty || control.touched) && control.errors) {
       Object.entries(control.errors).forEach(
         ([key, _]) => {
-          messages.push(this.KEYS[key] || this.KEYS['_default']);
+          messages.concat(this.KEYS[key] || this.KEYS['_default']);
         }
       );
     }
