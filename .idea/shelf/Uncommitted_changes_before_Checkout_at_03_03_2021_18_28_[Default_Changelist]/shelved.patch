@@ -1,0 +1,55 @@
+Index: frontend/frontend.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<module type=\"WEB_MODULE\" version=\"4\">\n  <component name=\"NewModuleRootManager\" inherit-compiler-output=\"true\">\n    <exclude-output />\n    <content url=\"file://$MODULE_DIR$\">\n      <excludeFolder url=\"file://$MODULE_DIR$/dist\" />\n      <excludeFolder url=\"file://$MODULE_DIR$/tmp\" />\n    </content>\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\n  </component>\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/frontend/frontend.iml b/frontend/frontend.iml
+--- a/frontend/frontend.iml	(revision 33876b1b35feebc482da9d0a3d84b0a86370c1d5)
++++ b/frontend/frontend.iml	(date 1614806896878)
+@@ -6,6 +6,7 @@
+       <excludeFolder url="file://$MODULE_DIR$/dist" />
+       <excludeFolder url="file://$MODULE_DIR$/tmp" />
+     </content>
++    <orderEntry type="inheritedJdk" />
+     <orderEntry type="sourceFolder" forTests="false" />
+   </component>
+-</module>
+\ No newline at end of file
++</module>
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1614806896950)
++++ b/.idea/vcs.xml	(date 1614806896950)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1614806897022)
++++ b/.idea/modules.xml	(date 1614806897022)
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/frontend/frontend.iml" filepath="$PROJECT_DIR$/frontend/frontend.iml" />
++      <module fileurl="file://$PROJECT_DIR$/backend/locadora.iml" filepath="$PROJECT_DIR$/backend/locadora.iml" />
++    </modules>
++  </component>
++</project>
