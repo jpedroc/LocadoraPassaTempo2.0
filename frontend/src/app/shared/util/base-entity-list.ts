@@ -5,7 +5,6 @@ import {Table} from 'primeng/table';
 import {OnDestroy, ViewChild} from '@angular/core';
 import {DynamicDialogRef} from 'primeng/dynamicdialog';
 import {finalize, takeWhile} from 'rxjs/operators';
-import {Page} from './page';
 
 export abstract class BaseEntityList<Model, List> implements OnDestroy {
 
