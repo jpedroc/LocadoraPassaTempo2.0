@@ -32,7 +32,7 @@ public class TituloResource {
 
     private final TituloService tituloService;
 
-    @PostMapping
+    @PostMapping("search")
     public ResponseEntity<Page<TituloListagemDto>> listar(@RequestBody TituloFilter filter, Pageable pageable) {
         Page<TituloListagemDto> titulos = tituloService.findAll(filter, pageable);
         return new ResponseEntity<>(titulos, HttpStatus.OK);

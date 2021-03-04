@@ -27,7 +27,7 @@ public class DiretorResource {
 
     private final DiretorService diretorService;
 
-    @PostMapping
+    @PostMapping("search")
     public ResponseEntity<Page<Diretor>> listarDiretores(@RequestBody DiretorFilter filter, Pageable pageable) {
         Page<Diretor> diretores = diretorService.findAll(pageable, filter);
         return new ResponseEntity<>(diretores, HttpStatus.OK);

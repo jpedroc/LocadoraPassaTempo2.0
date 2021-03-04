@@ -5,11 +5,8 @@ import com.jpedro.locadora.repository.AtorRepository;
 import com.jpedro.locadora.service.AtorService;
 import com.jpedro.locadora.service.dto.DropDownDTO;
 import com.jpedro.locadora.service.exception.BadRequestException;
-import com.jpedro.locadora.service.filter.AtorFilter;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -33,9 +30,8 @@ public class AtorServiceImpl implements AtorService {
     }
 
     @Override
-    public Page<Ator> findAll(Pageable pageable, AtorFilter filter) {
-        Page<Ator> atores = atorRepository.findAll(filter.filter(), pageable);
-        return atores;
+    public List<Ator> findAll() {
+        return atorRepository.findAll();
     }
 
     @Override

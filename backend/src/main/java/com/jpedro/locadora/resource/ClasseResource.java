@@ -27,7 +27,7 @@ public class ClasseResource {
 
     private final ClasseService classeService;
 
-    @PostMapping
+    @PostMapping("search")
     public ResponseEntity<Page<Classe>> listarClasses(@RequestBody ClasseFilter filter, Pageable pageable) {
         Page<Classe> classes = classeService.findAll(pageable, filter);
         return new ResponseEntity<>(classes, HttpStatus.OK);

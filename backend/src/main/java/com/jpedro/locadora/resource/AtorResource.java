@@ -24,9 +24,9 @@ public class AtorResource {
 
     private final AtorService atorService;
 
-    @PostMapping
-    public ResponseEntity<Page<Ator>> listarAtores(@RequestBody AtorFilter filter, Pageable pageable) {
-        Page<Ator> atores = atorService.findAll(pageable, filter);
+    @GetMapping
+    public ResponseEntity<List<Ator>> listar() {
+        List<Ator> atores = atorService.findAll();
         return new ResponseEntity<>(atores, HttpStatus.OK);
     }
 
