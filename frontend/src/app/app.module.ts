@@ -1,10 +1,13 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
-import {RouterModule} from '@angular/router';
-import {ToastModule} from 'primeng/toast';
+import {AppComponent} from './app.component';
 import {SharedModule} from './shared/shared.module';
+import {AtorModule} from './pages/ator/ator.module';
+import {ModalService} from './shared/util/modal-service';
+import {DialogService} from 'primeng/dynamicdialog';
+import {AtorService} from './shared/services/ator-service.service';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -12,9 +15,10 @@ import {SharedModule} from './shared/shared.module';
   ],
   imports: [
     BrowserModule,
-    SharedModule
+    SharedModule,
+    AtorModule,
   ],
-  providers: [],
+  providers: [ModalService, DialogService, AtorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

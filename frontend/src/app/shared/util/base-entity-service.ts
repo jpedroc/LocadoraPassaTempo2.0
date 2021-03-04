@@ -6,7 +6,6 @@ import {Observable} from 'rxjs';
 import {RequestUtil} from './request-util';
 import {Page} from './page';
 import {DefaultFilter} from '../models/default-filter';
-import {Pageable} from '../models/pageable';
 
 export abstract class BaseEntityService<T, Y> {
 
@@ -16,8 +15,8 @@ export abstract class BaseEntityService<T, Y> {
 
   abstract getEntity(): string;
 
-  search(table: Table, filter: DefaultFilter): Observable<Pageable<Y>> {
-    return this.http.post<Pageable<Y>>(this.resourceUrl, filter,
+  search(table: Table, filter: DefaultFilter): Observable<Page<Y>> {
+    return this.http.post<Page<Y>>(this.resourceUrl, filter,
       {params: RequestUtil.getRequestParamsTable(table)});
   }
 
